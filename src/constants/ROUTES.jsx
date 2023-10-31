@@ -1,12 +1,14 @@
-import App from "../App.jsx";
+import Home from "../views/Home.jsx";
+import Root from "../layouts/Root.jsx";
 
 const ROUTES = [
   {
     path: "/",
+    element: <Root />,
     children: [
       {
         index: true,
-        element: <App />,
+        element: <Home />,
       },
     ],
   },
